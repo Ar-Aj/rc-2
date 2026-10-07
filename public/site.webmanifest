@@ -1,0 +1,13 @@
+{
+  "name": "Rapid Construction",
+  "short_name": "Rapid",
+  "description": "Builders & Developers — Building Relations Since 1984",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf7f0",
+  "theme_color": "#1e110b",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

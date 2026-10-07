@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#1e110b" />
+    <meta name="color-scheme" content="light" />
+    <meta name="author" content="Rapid Construction" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="/icon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/icon-192.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- seo:start -->
+    <title>Rapid Construction — Builders & Developers in Mumbai since 1984</title>
+    <meta name="description" content="Forty years of building Mumbai — from Narayan Dhuru Street to Rapid Heights, Maimoon Tower and the Rapid Residency township in Neral." />
+    <!-- seo:end -->
+    <script>
+      /* Show the brick loader once per session, never for reduced motion. */
+      try {
+        var d = document.documentElement
+        if (sessionStorage.getItem('rc-intro') || matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('rc-no-intro')
+        else sessionStorage.setItem('rc-intro', '1')
+      } catch (e) {}
+    </script>
+    <style>
+      html { background: #1e110b; }
+      body { margin: 0; background: #fbf7f0; }
+      #rc-intro { position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center; background: #1e110b; color: #e8d2a8;
+        transition: clip-path 1.1s cubic-bezier(.76,0,.24,1), visibility 0s 1.1s; clip-path: inset(0 0 0 0); }
+      .rc-no-intro #rc-intro, #rc-intro.is-done { clip-path: inset(0 0 100% 0); visibility: hidden; }
+      .rc-no-intro #rc-intro { transition: none; }
+      #rc-intro .mark { width: min(132px, 30vw); overflow: visible; }
+      #rc-intro .roof { stroke-dasharray: 220; stroke-dashoffset: 220; animation: rc-draw 1.1s .1s cubic-bezier(.16,1,.3,1) forwards; }
+      #rc-intro .row { opacity: 0; transform: translateY(10px); animation: rc-rise .7s cubic-bezier(.16,1,.3,1) forwards; }
+      #rc-intro .row:nth-of-type(1){animation-delay:.70s}#rc-intro .row:nth-of-type(2){animation-delay:.60s}
+      #rc-intro .row:nth-of-type(3){animation-delay:.50s}#rc-intro .row:nth-of-type(4){animation-delay:.40s}
+      #rc-intro .row:nth-of-type(5){animation-delay:.30s}#rc-intro .row:nth-of-type(6){animation-delay:.20s}
+      #rc-intro .rc { opacity: 0; animation: rc-fade .6s .95s ease forwards; }
+      #rc-intro .meta { margin-top: 28px; display: flex; gap: 18px; align-items: center; font: 500 11px/1 system-ui, sans-serif; letter-spacing: .32em; text-transform: uppercase; opacity: 0; animation: rc-fade .6s .5s ease forwards; }
+      #rc-intro .meta i { width: 40px; height: 1px; background: currentColor; opacity: .4; }
+      @property --rc-y { syntax: '<integer>'; initial-value: 1984; inherits: false; }
+      #rc-intro .year { --rc-y: 1984; counter-reset: y var(--rc-y); animation: rc-year 1.6s .4s cubic-bezier(.65,0,.35,1) forwards; font-variant-numeric: tabular-nums; }
+      #rc-intro .year::after { content: counter(y); }
+      @keyframes rc-year { to { --rc-y: 2026; } }
+      @keyframes rc-draw { to { stroke-dashoffset: 0; } }
+      @keyframes rc-rise { to { opacity: 1; transform: none; } }
+      @keyframes rc-fade { to { opacity: 1; } }
+    </style>
+  </head>
+  <body>
+    <div id="rc-intro" aria-hidden="true">
+      <div style="display:grid;justify-items:center">
+        <svg class="mark" viewBox="0 0 120 84" fill="none">
+          <path class="roof" d="M6 30 L60 4 L114 30" stroke="#e8d2a8" stroke-width="2.2" stroke-linejoin="round" />
+          <g fill="#e8d2a8">
+            <g class="row"><rect x="10" y="74" width="31" height="6"/><rect x="43" y="74" width="34" height="6"/><rect x="79" y="74" width="31" height="6"/></g>
+            <g class="row"><rect x="10" y="66" width="18" height="6"/><rect x="30" y="66" width="28" height="6"/><rect x="60" y="66" width="28" height="6"/><rect x="90" y="66" width="20" height="6"/></g>
+            <g class="row"><rect x="30" y="58" width="18" height="6"/><rect x="50" y="58" width="20" height="6"/><rect x="72" y="58" width="18" height="6"/></g>
+            <g class="row"><rect x="30" y="50" width="12" height="6"/><rect x="44" y="50" width="20" height="6"/><rect x="66" y="50" width="24" height="6"/></g>
+            <g class="row"><rect x="30" y="42" width="20" height="6"/><rect x="52" y="42" width="16" height="6"/><rect x="70" y="42" width="20" height="6"/></g>
+            <g class="row"><rect x="30" y="34" width="14" height="6"/><rect x="46" y="34" width="22" height="6"/><rect x="70" y="34" width="20" height="6"/></g>
+          </g>
+          <text class="rc" x="60" y="57" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="20" fill="#1e110b" letter-spacing="-1">RC</text>
+        </svg>
+        <div class="meta"><span>Rapid Construction</span><i></i><span class="year"></span></div>
+      </div>
+    </div>
+    <div id="root"></div>
+    <!-- noscript -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
