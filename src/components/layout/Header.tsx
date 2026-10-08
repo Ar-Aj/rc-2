@@ -79,7 +79,7 @@ export function Header() {
             aria-label="Rapid Construction — Home"
           >
             {/* Architectural brick house mark */}
-            <div className="relative flex h-10 w-10 items-center justify-center rounded-xs bg-brown-900 border border-gold-400/40 p-1.5 transition-colors group-hover:border-gold-300">
+            <div className="relative flex h-10 w-10 items-center justify-center rounded-xs bg-brown-900 border border-cream-300/30 p-1.5 transition-colors group-hover:border-cream-300">
               <svg viewBox="0 0 120 84" fill="none" className="h-full w-full">
                 <path d="M6 30 L60 4 L114 30" stroke="var(--color-cream-300)" strokeWidth="4" strokeLinejoin="round" />
                 <g fill="var(--color-cream-300)">
@@ -106,7 +106,7 @@ export function Header() {
               </svg>
             </div>
             <div className="flex flex-col">
-              <span className="font-display text-xl tracking-[0.06em] uppercase font-bold text-cream-100 group-hover:text-gold-300 transition-colors">
+              <span className="font-display text-xl tracking-[0.06em] uppercase font-bold text-cream-100 group-hover:text-cream-200 transition-colors">
                 Rapid Construction
               </span>
               <span className="text-[10px] tracking-[0.24em] uppercase text-cream-300/80 font-sans -mt-0.5">
@@ -128,7 +128,7 @@ export function Header() {
                   >
                     <button
                       type="button"
-                      className="nav-link flex items-center gap-1.5 text-cream-200 hover:text-gold-300 transition-colors cursor-pointer"
+                      className="nav-link flex items-center gap-1.5 text-cream-200 hover:text-cream-50 transition-colors cursor-pointer"
                       aria-expanded={projectsOpen}
                       onClick={() => setProjectsOpen(!projectsOpen)}
                     >
@@ -153,11 +153,11 @@ export function Header() {
                             className="group/child flex flex-col p-3 rounded-xs hover:bg-brown-800/80 transition-colors"
                           >
                             <div className="flex items-center justify-between">
-                              <span className="text-xs font-semibold tracking-wider text-cream-100 group-hover/child:text-gold-300">
+                              <span className="text-xs font-semibold tracking-wider text-cream-100 group-hover/child:text-cream-50">
                                 {child.label}
                               </span>
                               {child.badge && (
-                                <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-gold-400/20 text-gold-300 border border-gold-400/40">
+                                <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-cream-300/15 text-cream-200 border border-cream-300/30">
                                   {child.badge}
                                 </span>
                               )}
@@ -180,7 +180,7 @@ export function Header() {
                   to={item.href}
                   className={cn(
                     'nav-link transition-colors py-1',
-                    isActive ? 'text-gold-300 font-semibold' : 'text-cream-200 hover:text-gold-300',
+                    isActive ? 'text-cream-50 font-semibold border-b border-cream-300/60' : 'text-cream-200 hover:text-cream-50',
                   )}
                   aria-current={isActive ? 'page' : undefined}
                 >
@@ -194,10 +194,10 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <a
               href="tel:+919930420085"
-              className="flex items-center gap-2 text-xs tracking-wider uppercase text-cream-200 hover:text-gold-300 transition-colors px-2 py-1"
+              className="flex items-center gap-2 text-xs tracking-wider uppercase text-cream-200 hover:text-cream-50 transition-colors px-2 py-1"
               title="Call Rapid Construction"
             >
-              <Phone className="h-3.5 w-3.5 text-gold-400" />
+              <Phone className="h-3.5 w-3.5 text-cream-300" />
               <span className="font-sans font-medium">+91 99304 20085</span>
             </a>
 
@@ -213,7 +213,7 @@ export function Header() {
           {/* Mobile Hamburger Button */}
           <button
             type="button"
-            className="xl:hidden p-2 text-cream-100 hover:text-gold-300 transition-colors focus:outline-none"
+            className="xl:hidden p-2 text-cream-100 hover:text-cream-50 transition-colors focus:outline-none"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? 'Close Menu' : 'Open Menu'}
             aria-expanded={mobileOpen}
@@ -231,78 +231,78 @@ export function Header() {
         )}
       >
         <div className="flex flex-col gap-5 pt-4">
-          <span className="eyebrow text-gold-400">Navigation</span>
+          <span className="eyebrow text-cream-300">Navigation</span>
           <nav className="flex flex-col gap-3 font-display text-2xl tracking-tight text-cream-100">
             <Link
               to="/projects"
-              className="hover:text-gold-300 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
+              className="hover:text-cream-50 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
             >
               <span>Projects Archive</span>
               <ArrowUpRight className="h-4 w-4 opacity-50" />
             </Link>
             <div className="pl-4 flex flex-col gap-2 text-base font-sans text-cream-300/80 -mt-1 pb-2">
-              <Link to="/projects/upcoming" className="hover:text-gold-300 transition-colors">
+              <Link to="/projects/upcoming" className="hover:text-cream-50 transition-colors">
                 • Upcoming: Rapid Residency Phase IV
               </Link>
-              <Link to="/projects/current" className="hover:text-gold-300 transition-colors">
+              <Link to="/projects/current" className="hover:text-cream-50 transition-colors">
                 • Ready: Rapid Residency Phase III
               </Link>
-              <Link to="/projects/completed" className="hover:text-gold-300 transition-colors">
+              <Link to="/projects/completed" className="hover:text-cream-50 transition-colors">
                 • Completed Landmarks
               </Link>
             </div>
             <Link
               to="/legacy"
-              className="hover:text-gold-300 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
+              className="hover:text-cream-50 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
             >
               <span>Our Legacy (1984)</span>
               <ArrowUpRight className="h-4 w-4 opacity-50" />
             </Link>
             <Link
               to="/leadership"
-              className="hover:text-gold-300 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
+              className="hover:text-cream-50 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
             >
               <span>Leadership Team</span>
               <ArrowUpRight className="h-4 w-4 opacity-50" />
             </Link>
             <Link
               to="/construction-timeline"
-              className="hover:text-gold-300 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
+              className="hover:text-cream-50 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
             >
               <span>Construction Timeline</span>
               <ArrowUpRight className="h-4 w-4 opacity-50" />
             </Link>
             <Link
               to="/future-developments"
-              className="hover:text-gold-300 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
+              className="hover:text-cream-50 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
             >
               <span>Future Developments</span>
               <ArrowUpRight className="h-4 w-4 opacity-50" />
             </Link>
             <Link
               to="/gallery"
-              className="hover:text-gold-300 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
+              className="hover:text-cream-50 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
             >
               <span>Visual Gallery</span>
               <ArrowUpRight className="h-4 w-4 opacity-50" />
             </Link>
             <Link
               to="/why-rapid"
-              className="hover:text-gold-300 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
+              className="hover:text-cream-50 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
             >
               <span>Why Rapid</span>
               <ArrowUpRight className="h-4 w-4 opacity-50" />
             </Link>
             <Link
               to="/testimonials"
-              className="hover:text-gold-300 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
+              className="hover:text-cream-50 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
             >
               <span>Testimonials</span>
               <ArrowUpRight className="h-4 w-4 opacity-50" />
             </Link>
             <Link
               to="/contact"
-              className="hover:text-gold-300 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
+              className="hover:text-cream-50 transition-colors py-1 flex items-center justify-between border-b border-brown-800"
             >
               <span>Contact & Offices</span>
               <ArrowUpRight className="h-4 w-4 opacity-50" />
@@ -317,7 +317,7 @@ export function Header() {
           </Link>
           <div className="flex items-center justify-between text-xs text-cream-300/80">
             <span>Direct Desk:</span>
-            <a href="tel:+919930420085" className="text-gold-300 font-semibold">
+            <a href="tel:+919930420085" className="text-cream-100 font-semibold hover:underline">
               +91 99304 20085
             </a>
           </div>

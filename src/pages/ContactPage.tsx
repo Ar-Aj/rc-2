@@ -26,7 +26,7 @@ export function ContactPage() {
 
       {/* 2. Interactive Contact Grid & Form */}
       <section className="py-24 bg-cream-50">
-        <div className="px-site max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="px-site grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Column: Offices & Direct Lines */}
           <div className="lg:col-span-6 space-y-12">
             <div>
@@ -40,10 +40,10 @@ export function ContactPage() {
               {offices.map((office) => (
                 <div
                   key={office.id}
-                  className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-sm space-y-4 hover:border-gold-400 transition-colors"
+                  className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200 shadow-sm space-y-4 hover:border-brown-400 transition-colors"
                 >
                   <div className="flex items-center justify-between border-b border-stone-100 pb-3">
-                    <span className="text-xs uppercase tracking-widest font-bold text-gold-600 font-mono">
+                    <span className="text-xs uppercase tracking-widest font-bold text-brown-700 font-mono">
                       {office.role}
                     </span>
                     <span className="text-xs text-stone-500 font-medium">

@@ -36,7 +36,7 @@ export function WhyRapidPage() {
 
       {/* 3. The 4 Non-Negotiable Pillars */}
       <section className="py-24 bg-cream-50">
-        <div className="px-site max-w-7xl mx-auto space-y-16">
+        <div className="px-site space-y-16">
           <SectionHeading
             eyebrow="The Four Foundations"
             title="The Principles That Govern Every Square Foot"
@@ -45,8 +45,8 @@ export function WhyRapidPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Pillar 1 */}
-            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm space-y-5 hover:border-gold-400/80 transition-colors">
-              <div className="h-12 w-12 rounded-xl bg-brown-900 text-gold-300 flex items-center justify-center">
+            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm space-y-5 hover:border-brown-300 transition-colors">
+              <div className="h-12 w-12 rounded-xl bg-brown-900 text-cream-200 flex items-center justify-center">
                 <Clock className="h-6 w-6" />
               </div>
               <h3 className="font-display text-2xl sm:text-3xl text-brown-950 font-bold">
@@ -58,8 +58,8 @@ export function WhyRapidPage() {
             </div>
 
             {/* Pillar 2 */}
-            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm space-y-5 hover:border-gold-400/80 transition-colors">
-              <div className="h-12 w-12 rounded-xl bg-brown-900 text-gold-300 flex items-center justify-center">
+            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm space-y-5 hover:border-brown-300 transition-colors">
+              <div className="h-12 w-12 rounded-xl bg-brown-900 text-cream-200 flex items-center justify-center">
                 <Zap className="h-6 w-6" />
               </div>
               <h3 className="font-display text-2xl sm:text-3xl text-brown-950 font-bold">
@@ -71,8 +71,8 @@ export function WhyRapidPage() {
             </div>
 
             {/* Pillar 3 */}
-            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm space-y-5 hover:border-gold-400/80 transition-colors">
-              <div className="h-12 w-12 rounded-xl bg-brown-900 text-gold-300 flex items-center justify-center">
+            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm space-y-5 hover:border-brown-300 transition-colors">
+              <div className="h-12 w-12 rounded-xl bg-brown-900 text-cream-200 flex items-center justify-center">
                 <FileCheck className="h-6 w-6" />
               </div>
               <h3 className="font-display text-2xl sm:text-3xl text-brown-950 font-bold">
@@ -84,8 +84,8 @@ export function WhyRapidPage() {
             </div>
 
             {/* Pillar 4 */}
-            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm space-y-5 hover:border-gold-400/80 transition-colors">
-              <div className="h-12 w-12 rounded-xl bg-brown-900 text-gold-300 flex items-center justify-center">
+            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-sm space-y-5 hover:border-brown-300 transition-colors">
+              <div className="h-12 w-12 rounded-xl bg-brown-900 text-cream-200 flex items-center justify-center">
                 <Users className="h-6 w-6" />
               </div>
               <h3 className="font-display text-2xl sm:text-3xl text-brown-950 font-bold">
@@ -101,12 +101,12 @@ export function WhyRapidPage() {
 
       {/* 4. Craft & Materials Spotlight */}
       <section className="py-24 bg-cream-100 border-y border-stone-300">
-        <div className="px-site max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="px-site grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <span className="eyebrow text-brown-700">Material Integrity</span>
             <h2 className="font-display text-3xl sm:text-5xl text-brown-950 leading-tight">
               Materials Chosen for <br />
-              <span className="display-italic text-gold-600">Longevity & Grace</span>
+              <span className="display-italic text-brown-600">Longevity & Grace</span>
             </h2>
             <p className="text-stone-700 font-sans text-base sm:text-lg leading-relaxed font-light">
               From heavy-gauge anodized aluminium sliding frames to high-grade vitrified ceramic flooring and certified copper conduit wiring, we select finishes that withstand coastal humidity and decades of daily family use.
@@ -142,7 +142,7 @@ export function WhyRapidPage() {
 
       {/* 5. What Homeowners Say */}
       <section className="py-24 bg-cream-50">
-        <div className="px-site max-w-7xl mx-auto space-y-12">
+        <div className="px-site space-y-12">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <span className="eyebrow text-brown-700">Resident Testimonies</span>
@@ -152,7 +152,7 @@ export function WhyRapidPage() {
             </div>
             <Link
               to="/testimonials"
-              className="text-xs uppercase tracking-wider font-semibold text-brown-800 hover:text-gold-600 inline-flex items-center gap-1.5"
+              className="text-xs uppercase tracking-wider font-semibold text-brown-800 hover:text-brown-600 inline-flex items-center gap-1.5"
             >
               <span>View All Testimonials</span>
               <ArrowRight className="h-3.5 w-3.5" />

@@ -61,17 +61,17 @@ export function ProjectDetailPage() {
           </div>
         )}
 
-        <div className="px-site relative z-10 w-full max-w-7xl mx-auto space-y-6">
+        <div className="px-site relative z-10 w-full space-y-6">
           {/* Breadcrumbs */}
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-cream-300/70 uppercase tracking-widest font-sans">
-            <Link to="/projects" className="hover:text-gold-300 transition-colors">
+            <Link to="/projects" className="hover:text-cream-50 transition-colors">
               Projects
             </Link>
-            <ChevronRight className="h-3 w-3 text-gold-400" />
-            <Link to={`/projects/${project.status}`} className="hover:text-gold-300 transition-colors capitalize">
+            <ChevronRight className="h-3 w-3 text-cream-300/60" />
+            <Link to={`/projects/${project.status}`} className="hover:text-cream-50 transition-colors capitalize">
               {project.status}
             </Link>
-            <ChevronRight className="h-3 w-3 text-gold-400" />
+            <ChevronRight className="h-3 w-3 text-cream-300/60" />
             <span className="text-cream-100 font-semibold">{project.name}</span>
           </nav>
 
@@ -80,7 +80,7 @@ export function ProjectDetailPage() {
               className={cn(
                 'px-3 py-1 text-xs tracking-wider uppercase font-semibold rounded-full border',
                 project.status === 'upcoming'
-                  ? 'bg-gold-500/20 text-gold-300 border-gold-400/40'
+                  ? 'bg-cream-300/15 text-cream-200 border-cream-300/30'
                   : project.status === 'current'
                   ? 'bg-emerald-950/50 text-emerald-300 border-emerald-500/40'
                   : 'bg-cream-100/10 text-cream-200 border-cream-200/20',
@@ -97,7 +97,7 @@ export function ProjectDetailPage() {
             {project.name}
           </h1>
 
-          <p className="font-display text-xl sm:text-2xl lg:text-3xl italic text-gold-300/90 max-w-3xl leading-snug">
+          <p className="font-display text-xl sm:text-2xl lg:text-3xl italic text-cream-200/95 max-w-3xl leading-snug">
             "{project.tagline}"
           </p>
 
@@ -109,7 +109,7 @@ export function ProjectDetailPage() {
           <div className="pt-4 flex flex-wrap items-center gap-4">
             <Link
               to={`/book-site-visit?project=${project.slug}`}
-              className="btn btn-primary bg-gold-400 text-brown-950 hover:bg-gold-300 border-none shadow-glow font-semibold"
+              className="btn btn-primary"
             >
               <span>Schedule a Site Visit</span>
               <ArrowRight className="h-4 w-4" />
@@ -121,7 +121,7 @@ export function ProjectDetailPage() {
                 download
                 className="btn btn-outline border-cream-200/40 text-cream-100 hover:bg-cream-100/10"
               >
-                <Download className="h-4 w-4 text-gold-400" />
+                <Download className="h-4 w-4 text-cream-300" />
                 <span>Brochure ({project.downloads[0].size})</span>
               </a>
             )}
@@ -130,7 +130,7 @@ export function ProjectDetailPage() {
               href="tel:+919930420085"
               className="btn btn-ghost text-cream-300 hover:text-cream-100 gap-2"
             >
-              <Phone className="h-4 w-4 text-gold-400" />
+              <Phone className="h-4 w-4 text-cream-300" />
               <span>+91 99304 20085</span>
             </a>
           </div>
@@ -139,10 +139,10 @@ export function ProjectDetailPage() {
 
       {/* 2. Key Facts Strip */}
       <section className="bg-brown-900 border-y border-brown-800/80 text-cream-100 py-8">
-        <div className="px-site max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="px-site grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
           {project.facts.map((fact, idx) => (
             <div key={idx} className="space-y-1 border-l border-brown-800 pl-4">
-              <span className="text-[11px] uppercase tracking-wider text-gold-400/80 font-medium font-sans">
+              <span className="text-[11px] uppercase tracking-wider text-cream-300/80 font-medium font-sans">
                 {fact.label}
               </span>
               <p className="text-base sm:text-lg font-display font-medium text-cream-100">
@@ -155,12 +155,12 @@ export function ProjectDetailPage() {
 
       {/* 3. Architectural Narrative & Story */}
       <section className="py-24 bg-cream-50 text-graphite">
-        <div className="px-site max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="px-site grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <div className="lg:col-span-5 space-y-6">
             <span className="eyebrow text-brown-700">Architectural Context</span>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-brown-950 leading-[1.05]">
               Designed with Integrity, <br />
-              <span className="display-italic text-gold-500">Built to Endure.</span>
+              <span className="display-italic text-brown-600">Built to Endure.</span>
             </h2>
 
             <div className="space-y-4 pt-4 border-t border-stone-200 text-sm font-sans text-stone-600">
@@ -222,11 +222,11 @@ export function ProjectDetailPage() {
       {/* 4. Day / Night Interactive Elevation Comparison (if available) */}
       {hasDayNight && dayImgKey && nightImgKey && (
         <section className="py-20 bg-brown-950 text-cream-100 overflow-hidden border-y border-brown-800">
-          <div className="px-site max-w-7xl mx-auto space-y-10">
+          <div className="px-site space-y-10">
             <div className="text-center max-w-2xl mx-auto space-y-3">
-              <span className="eyebrow text-gold-400">Signature Elevation</span>
+              <span className="eyebrow text-cream-300">Signature Elevation</span>
               <h2 className="font-display text-3xl sm:text-5xl text-cream-100">
-                Daylight Radiance vs. <span className="display-italic text-gold-300">Dusk Illumination</span>
+                Daylight Radiance vs. <span className="display-italic text-cream-200">Dusk Illumination</span>
               </h2>
               <p className="text-cream-300/80 text-sm font-sans">
                 Drag the interactive slider to view the façade transition between bright sunlit daylight and ambient warm night lighting.
@@ -249,7 +249,7 @@ export function ProjectDetailPage() {
       {/* 5. Floor Plans Showcase (if available) */}
       {project.floorPlans && project.floorPlans.length > 0 && (
         <section className="py-24 bg-cream-100 border-b border-stone-300/70">
-          <div className="px-site max-w-7xl mx-auto space-y-12">
+          <div className="px-site space-y-12">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div>
                 <span className="eyebrow text-brown-700">Considered Layouts</span>
@@ -327,7 +327,7 @@ export function ProjectDetailPage() {
 
                 <div className="lg:col-span-5 space-y-6">
                   <div className="space-y-2">
-                    <span className="text-xs uppercase tracking-widest text-gold-600 font-semibold">
+                    <span className="text-xs uppercase tracking-widest text-brown-700 font-semibold">
                       Residence Spec
                     </span>
                     <h3 className="font-display text-3xl sm:text-4xl text-brown-950">
@@ -361,10 +361,10 @@ export function ProjectDetailPage() {
                   <div className="pt-2 flex flex-wrap gap-3">
                     <Link
                       to={`/book-site-visit?project=${project.slug}&flat=${project.floorPlans[activePlanIdx].name}`}
-                      className="btn btn-primary bg-brown-800 text-cream-100 hover:bg-brown-900 !py-2.5 !text-xs"
+                      className="btn btn-primary !py-2.5 !text-xs"
                     >
                       <span>Inquire for {project.floorPlans[activePlanIdx].name}</span>
-                      <ArrowRight className="h-4 w-4 text-gold-400" />
+                      <ArrowRight className="h-4 w-4" />
                     </Link>
                   </div>
                 </div>
@@ -377,7 +377,7 @@ export function ProjectDetailPage() {
       {/* 6. Technical Specifications Breakdown */}
       {project.specs && project.specs.length > 0 && (
         <section className="py-24 bg-cream-50">
-          <div className="px-site max-w-7xl mx-auto space-y-12">
+          <div className="px-site space-y-12">
             <SectionHeading
               eyebrow="Craft & Engineering"
               title="Technical Specifications & Materials"
@@ -388,10 +388,10 @@ export function ProjectDetailPage() {
               {project.specs.map((group, idx) => (
                 <div
                   key={idx}
-                  className="bg-white p-6 sm:p-8 rounded-xl border border-stone-200/90 shadow-sm space-y-4 hover:border-gold-400/60 transition-colors"
+                  className="bg-white p-6 sm:p-8 rounded-xl border border-stone-200/90 shadow-sm space-y-4 hover:border-brown-400/60 transition-colors"
                 >
                   <div className="flex items-center gap-3 border-b border-stone-100 pb-3">
-                    <Sparkles className="h-4 w-4 text-gold-500" />
+                    <Sparkles className="h-4 w-4 text-brown-600" />
                     <h3 className="font-display text-xl text-brown-950 font-semibold">
                       {group.group}
                     </h3>
@@ -415,9 +415,9 @@ export function ProjectDetailPage() {
       {/* 7. Curated Amenities */}
       {project.amenities && project.amenities.length > 0 && (
         <section className="py-24 bg-brown-950 text-cream-100">
-          <div className="px-site max-w-7xl mx-auto space-y-12">
+          <div className="px-site space-y-12">
             <div className="max-w-2xl space-y-3">
-              <span className="eyebrow text-gold-400">Lifestyle & Leisure</span>
+              <span className="eyebrow text-cream-300">Lifestyle & Leisure</span>
               <h2 className="font-display text-3xl sm:text-5xl text-cream-100">
                 Resort-Grade Amenities Within Your Gates
               </h2>
@@ -430,9 +430,9 @@ export function ProjectDetailPage() {
               {project.amenities.map((amenity, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-4 p-5 rounded-lg bg-brown-900/60 border border-brown-800 hover:border-gold-400/50 transition-colors"
+                  className="flex items-center gap-4 p-5 rounded-lg bg-brown-900/60 border border-brown-800 hover:border-cream-300/30 transition-colors"
                 >
-                  <div className="h-10 w-10 rounded-full bg-gold-500/10 border border-gold-400/30 flex items-center justify-center text-gold-300 shrink-0">
+                  <div className="h-10 w-10 rounded-full bg-cream-300/15 border border-cream-300/30 flex items-center justify-center text-cream-200 shrink-0">
                     <CheckCircle2 className="h-5 w-5" />
                   </div>
                   <span className="text-sm font-sans text-cream-100 font-medium">
@@ -448,7 +448,7 @@ export function ProjectDetailPage() {
       {/* 8. Visual Gallery Lightbox Section */}
       {project.gallery.length > 0 && (
         <section className="py-24 bg-cream-50 border-t border-stone-200">
-          <div className="px-site max-w-7xl mx-auto space-y-10">
+          <div className="px-site space-y-10">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
               <div>
                 <span className="eyebrow text-brown-700">Visual Record</span>
@@ -476,7 +476,7 @@ export function ProjectDetailPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-brown-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                     <div className="flex items-center justify-between w-full text-cream-100 text-xs">
                       <span>{item.caption}</span>
-                      <Maximize2 className="h-4 w-4 text-gold-300" />
+                      <Maximize2 className="h-4 w-4 text-cream-300" />
                     </div>
                   </div>
                 </div>
@@ -503,7 +503,7 @@ export function ProjectDetailPage() {
             <button
               type="button"
               onClick={() => setSelectedGalleryKey(null)}
-              className="mt-4 px-6 py-2 rounded-full bg-cream-100 text-brown-950 text-xs font-semibold hover:bg-gold-300 transition-colors"
+              className="mt-4 px-6 py-2 rounded-full bg-cream-100 text-brown-950 text-xs font-semibold hover:bg-white transition-colors"
             >
               Close Preview (ESC)
             </button>
@@ -514,12 +514,12 @@ export function ProjectDetailPage() {
       {/* 9. Location, Connectivity & Landmarks */}
       {(project.connectivity || project.nearby) && (
         <section className="py-24 bg-cream-100 border-t border-stone-300">
-          <div className="px-site max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="px-site grid grid-cols-1 lg:grid-cols-12 gap-12">
             <div className="lg:col-span-5 space-y-6">
               <span className="eyebrow text-brown-700">Strategic Geography</span>
               <h2 className="font-display text-3xl sm:text-5xl text-brown-950 leading-tight">
                 Connected to Mumbai, <br />
-                <span className="display-italic text-gold-500">Close to Nature.</span>
+                <span className="display-italic text-brown-600">Close to Nature.</span>
               </h2>
               <p className="text-stone-600 text-sm sm:text-base font-sans font-light leading-relaxed">
                 Positioned in {project.area}, {project.city} with direct access to arterial rail and highway networks.
@@ -563,7 +563,7 @@ export function ProjectDetailPage() {
                             {n.kind}
                           </span>
                         </div>
-                        <span className="text-xs font-mono font-medium text-gold-600 shrink-0">
+                        <span className="text-xs font-mono font-medium text-brown-700 shrink-0">
                           {n.distance}
                         </span>
                       </div>
@@ -592,8 +592,8 @@ export function ProjectDetailPage() {
 
       {/* 11. Bottom Site Visit Call to Action */}
       <section className="py-20 bg-brown-950 text-cream-100 border-t border-brown-800">
-        <div className="px-site max-w-5xl mx-auto text-center space-y-8">
-          <span className="eyebrow text-gold-400">Experience Firsthand</span>
+        <div className="px-site text-center space-y-8">
+          <span className="eyebrow text-cream-300">Experience Firsthand</span>
           <h2 className="font-display text-4xl sm:text-6xl text-cream-100">
             Visit {project.name} in Person
           </h2>
@@ -603,7 +603,7 @@ export function ProjectDetailPage() {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <Link
               to={`/book-site-visit?project=${project.slug}`}
-              className="btn btn-primary bg-gold-400 text-brown-950 hover:bg-gold-300 shadow-glow font-semibold"
+              className="btn btn-primary"
             >
               <span>Book Your Visit Now</span>
               <ArrowRight className="h-4 w-4" />
@@ -612,7 +612,7 @@ export function ProjectDetailPage() {
               href="tel:+919930420085"
               className="btn btn-outline border-cream-200/30 text-cream-100 hover:bg-cream-100/10"
             >
-              <Phone className="h-4 w-4 text-gold-400" />
+              <Phone className="h-4 w-4 text-cream-300" />
               <span>Call Us: +91 99304 20085</span>
             </a>
           </div>

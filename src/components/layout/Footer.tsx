@@ -21,7 +21,7 @@ export function Footer() {
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="h-9 w-9 rounded-xs bg-brown-900 border border-gold-400/40 p-1 flex items-center justify-center">
+                <div className="h-9 w-9 rounded-xs bg-brown-900 border border-cream-300/30 p-1 flex items-center justify-center">
                   <svg viewBox="0 0 120 84" fill="none" className="h-full w-full">
                     <path d="M6 30 L60 4 L114 30" stroke="var(--color-cream-300)" strokeWidth="4" strokeLinejoin="round" />
                     <g fill="var(--color-cream-300)">
@@ -74,45 +74,45 @@ export function Footer() {
           <div className="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-8">
             {/* Column 1: Projects */}
             <div className="space-y-4">
-              <span className="eyebrow text-gold-400">Projects</span>
+              <span className="eyebrow text-cream-300">Projects</span>
               <ul className="space-y-2.5 text-xs text-cream-200/90 font-sans">
                 <li>
-                  <Link to="/projects/upcoming" className="hover:text-gold-300 transition-colors">
+                  <Link to="/projects/upcoming" className="hover:text-cream-50 transition-colors">
                     Rapid Residency Phase IV
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects/current" className="hover:text-gold-300 transition-colors">
+                  <Link to="/projects/current" className="hover:text-cream-50 transition-colors">
                     Rapid Residency Phase III
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects/maimoon-tower" className="hover:text-gold-300 transition-colors">
+                  <Link to="/projects/maimoon-tower" className="hover:text-cream-50 transition-colors">
                     Maimoon Tower, Byculla
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects/rapid-heights" className="hover:text-gold-300 transition-colors">
+                  <Link to="/projects/rapid-heights" className="hover:text-cream-50 transition-colors">
                     Rapid Heights (G+32)
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects/hotel-elegant" className="hover:text-gold-300 transition-colors">
+                  <Link to="/projects/hotel-elegant" className="hover:text-cream-50 transition-colors">
                     Hotel Elegant, Mumbai
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects/rapid-royal" className="hover:text-gold-300 transition-colors">
+                  <Link to="/projects/rapid-royal" className="hover:text-cream-50 transition-colors">
                     Rapid Royal (Strikers)
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects/rapid-jewel" className="hover:text-gold-300 transition-colors">
+                  <Link to="/projects/rapid-jewel" className="hover:text-cream-50 transition-colors">
                     Rapid Jewel, Khopoli
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects" className="text-gold-300 font-medium hover:underline inline-flex items-center gap-1">
+                  <Link to="/projects" className="text-cream-200 font-medium hover:text-white hover:underline inline-flex items-center gap-1">
                     <span>Complete Archive (20+)</span>
                     <ArrowUpRight className="h-3 w-3" />
                   </Link>
@@ -122,45 +122,45 @@ export function Footer() {
 
             {/* Column 2: Company */}
             <div className="space-y-4">
-              <span className="eyebrow text-gold-400">Company</span>
+              <span className="eyebrow text-cream-300">Company</span>
               <ul className="space-y-2.5 text-xs text-cream-200/90 font-sans">
                 <li>
-                  <Link to="/legacy" className="hover:text-gold-300 transition-colors">
+                  <Link to="/legacy" className="hover:text-cream-50 transition-colors">
                     Our Legacy (1984)
                   </Link>
                 </li>
                 <li>
-                  <Link to="/leadership" className="hover:text-gold-300 transition-colors">
+                  <Link to="/leadership" className="hover:text-cream-50 transition-colors">
                     Leadership Team
                   </Link>
                 </li>
                 <li>
-                  <Link to="/construction-timeline" className="hover:text-gold-300 transition-colors">
+                  <Link to="/construction-timeline" className="hover:text-cream-50 transition-colors">
                     Milestone Timeline
                   </Link>
                 </li>
                 <li>
-                  <Link to="/future-developments" className="hover:text-gold-300 transition-colors">
+                  <Link to="/future-developments" className="hover:text-cream-50 transition-colors">
                     Future Pipeline (7.25L sq.ft)
                   </Link>
                 </li>
                 <li>
-                  <Link to="/why-rapid" className="hover:text-gold-300 transition-colors">
+                  <Link to="/why-rapid" className="hover:text-cream-50 transition-colors">
                     Why Rapid
                   </Link>
                 </li>
                 <li>
-                  <Link to="/testimonials" className="hover:text-gold-300 transition-colors">
+                  <Link to="/testimonials" className="hover:text-cream-50 transition-colors">
                     Resident Testimonials
                   </Link>
                 </li>
                 <li>
-                  <Link to="/gallery" className="hover:text-gold-300 transition-colors">
+                  <Link to="/gallery" className="hover:text-cream-50 transition-colors">
                     Visual Archive
                   </Link>
                 </li>
                 <li>
-                  <Link to="/careers" className="hover:text-gold-300 transition-colors">
+                  <Link to="/careers" className="hover:text-cream-50 transition-colors">
                     Careers
                   </Link>
                 </li>
@@ -169,16 +169,16 @@ export function Footer() {
 
             {/* Column 3: Contact & Direct Desk */}
             <div className="space-y-4 col-span-2 md:col-span-1">
-              <span className="eyebrow text-gold-400">Direct Inquiries</span>
+              <span className="eyebrow text-cream-300">Direct Inquiries</span>
               <div className="space-y-3 text-xs text-cream-200/90">
                 <div>
                   <span className="block text-[10px] uppercase tracking-widest text-cream-300/60 mb-0.5">
                     Head Office Phones
                   </span>
-                  <a href="tel:+919930420085" className="block hover:text-gold-300 font-medium">
+                  <a href="tel:+919930420085" className="block hover:text-cream-50 font-medium">
                     +91 99304 20085
                   </a>
-                  <a href="tel:+919323038222" className="block hover:text-gold-300 font-medium">
+                  <a href="tel:+919323038222" className="block hover:text-cream-50 font-medium">
                     +91 93230 38222
                   </a>
                 </div>
@@ -187,10 +187,10 @@ export function Footer() {
                   <span className="block text-[10px] uppercase tracking-widest text-cream-300/60 mb-0.5">
                     Residency Sales Desk
                   </span>
-                  <a href="tel:+919769833123" className="block hover:text-gold-300 font-medium">
+                  <a href="tel:+919769833123" className="block hover:text-cream-50 font-medium">
                     +91 97698 33123
                   </a>
-                  <a href="tel:+919867555781" className="block hover:text-gold-300 font-medium">
+                  <a href="tel:+919867555781" className="block hover:text-cream-50 font-medium">
                     +91 98675 55781
                   </a>
                 </div>
@@ -199,16 +199,16 @@ export function Footer() {
                   <span className="block text-[10px] uppercase tracking-widest text-cream-300/60 mb-0.5">
                     Email & Social
                   </span>
-                  <a href={`mailto:${company.email}`} className="block hover:text-gold-300">
+                  <a href={`mailto:${company.email}`} className="block hover:text-cream-50">
                     {company.email}
                   </a>
                   <a
                     href={company.instagram}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="inline-flex items-center gap-1.5 hover:text-gold-300 mt-1"
+                    className="inline-flex items-center gap-1.5 hover:text-cream-50 mt-1"
                   >
-                    <Instagram className="h-3.5 w-3.5 text-gold-400" />
+                    <Instagram className="h-3.5 w-3.5 text-cream-300" />
                     <span>{company.instagramHandle}</span>
                   </a>
                 </div>
@@ -221,8 +221,8 @@ export function Footer() {
         <div className="py-12 border-b border-brown-800/80 grid grid-cols-1 md:grid-cols-3 gap-8 text-xs text-cream-300/80">
           {offices.map((office) => (
             <div key={office.id} className="space-y-1.5">
-              <div className="flex items-center gap-1.5 text-gold-300 font-semibold tracking-wider uppercase text-[11px]">
-                <MapPin className="h-3.5 w-3.5" />
+              <div className="flex items-center gap-1.5 text-cream-200 font-semibold tracking-wider uppercase text-[11px]">
+                <MapPin className="h-3.5 w-3.5 text-cream-300" />
                 <span>{office.name} — {office.role}</span>
               </div>
               <address className="not-italic leading-relaxed text-cream-200/80">

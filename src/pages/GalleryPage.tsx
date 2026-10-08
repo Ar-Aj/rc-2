@@ -275,7 +275,7 @@ export function GalleryPage() {
 
       {/* 3. Image Grid */}
       <section className="py-20 bg-cream-50">
-        <div className="px-site max-w-7xl mx-auto">
+        <div className="px-site">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filteredItems.map((item, idx) => (
               <div
@@ -296,14 +296,14 @@ export function GalleryPage() {
                     </span>
                   </div>
                   {item.year && (
-                    <span className="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-brown-950/70 text-gold-300 text-[10px] font-mono backdrop-blur-sm">
+                    <span className="absolute top-3 right-3 px-2.5 py-1 rounded-md bg-brown-950/70 text-cream-200 text-[10px] font-mono backdrop-blur-sm">
                       {item.year}
                     </span>
                   )}
                 </div>
 
                 <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-2">
-                  <h3 className="font-display text-lg text-brown-950 group-hover:text-gold-600 transition-colors line-clamp-1">
+                  <h3 className="font-display text-lg text-brown-950 group-hover:text-brown-700 transition-colors line-clamp-1">
                     {item.title}
                   </h3>
 

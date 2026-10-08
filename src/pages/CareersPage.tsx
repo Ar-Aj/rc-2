@@ -37,7 +37,7 @@ export function CareersPage() {
 
       {/* 2. Values & Culture Grid */}
       <section className="py-24 bg-cream-50">
-        <div className="px-site max-w-7xl mx-auto space-y-16">
+        <div className="px-site space-y-16">
           <SectionHeading
             eyebrow="Why Build With Us"
             title="Stability, Autonomy, and Generational Craft"
@@ -46,7 +46,7 @@ export function CareersPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm space-y-4">
-              <div className="h-12 w-12 rounded-xl bg-brown-900 text-gold-300 flex items-center justify-center">
+              <div className="h-12 w-12 rounded-xl bg-brown-900 text-cream-200 flex items-center justify-center">
                 <Building2 className="h-6 w-6" />
               </div>
               <h3 className="font-display text-2xl text-brown-950 font-bold">
@@ -58,7 +58,7 @@ export function CareersPage() {
             </div>
 
             <div className="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm space-y-4">
-              <div className="h-12 w-12 rounded-xl bg-brown-900 text-gold-300 flex items-center justify-center">
+              <div className="h-12 w-12 rounded-xl bg-brown-900 text-cream-200 flex items-center justify-center">
                 <Users className="h-6 w-6" />
               </div>
               <h3 className="font-display text-2xl text-brown-950 font-bold">
@@ -70,7 +70,7 @@ export function CareersPage() {
             </div>
 
             <div className="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm space-y-4">
-              <div className="h-12 w-12 rounded-xl bg-brown-900 text-gold-300 flex items-center justify-center">
+              <div className="h-12 w-12 rounded-xl bg-brown-900 text-cream-200 flex items-center justify-center">
                 <HeartHandshake className="h-6 w-6" />
               </div>
               <h3 className="font-display text-2xl text-brown-950 font-bold">
@@ -86,7 +86,7 @@ export function CareersPage() {
 
       {/* 3. Open Positions List */}
       <section className="py-24 bg-cream-100 border-t border-stone-300">
-        <div className="px-site max-w-5xl mx-auto space-y-12">
+        <div className="px-site space-y-12">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <span className="eyebrow text-brown-700">Opportunities</span>
@@ -103,7 +103,7 @@ export function CareersPage() {
             {openings.map((job, idx) => (
               <div
                 key={idx}
-                className="bg-white p-6 sm:p-8 rounded-xl border border-stone-200 shadow-sm hover:border-gold-400 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-6"
+                className="bg-white p-6 sm:p-8 rounded-xl border border-stone-200 shadow-sm hover:border-brown-400 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-6"
               >
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
@@ -147,7 +147,7 @@ export function CareersPage() {
       {/* 4. Spontaneous Application CTA */}
       <section className="py-20 bg-brown-950 text-cream-100 border-t border-brown-800">
         <div className="px-site max-w-4xl mx-auto text-center space-y-6">
-          <span className="eyebrow text-gold-400">Speculative Inquiries</span>
+          <span className="eyebrow text-cream-300">Speculative Inquiries</span>
           <h2 className="font-display text-4xl sm:text-5xl text-cream-100">
             Don't See Your Specific Discipline?
           </h2>
@@ -157,7 +157,7 @@ export function CareersPage() {
           <div className="pt-2">
             <a
               href="mailto:careers@rapidconstruction.in?subject=Speculative%20Application%20—%20Rapid%20Construction"
-              className="btn btn-primary bg-gold-400 text-brown-950 hover:bg-gold-300 shadow-glow font-semibold"
+              className="btn btn-primary"
             >
               <span>Send Your Portfolio & CV</span>
               <Send className="h-4 w-4" />

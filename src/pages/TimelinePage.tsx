@@ -83,12 +83,12 @@ export function TimelinePage() {
 
       {/* 3. Chronicle Feed */}
       <section className="py-24 bg-cream-50">
-        <div className="px-site max-w-5xl mx-auto space-y-12">
+        <div className="px-site space-y-12">
           <div className="relative border-l-2 border-stone-300 ml-4 sm:ml-8 pl-6 sm:pl-12 space-y-16">
             {displayedItems.map((item, idx) => (
               <div key={idx} className="relative group">
                 {/* Timeline node */}
-                <div className="absolute -left-[33px] sm:-left-[57px] top-1.5 h-6 w-6 rounded-full bg-cream-100 border-4 border-brown-700 group-hover:border-gold-500 group-hover:scale-125 transition-all shadow-sm" />
+                <div className="absolute -left-[33px] sm:-left-[57px] top-1.5 h-6 w-6 rounded-full bg-cream-100 border-4 border-brown-700 group-hover:border-brown-900 group-hover:scale-125 transition-all shadow-sm" />
 
                 <div className="bg-white p-6 sm:p-8 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-e2 transition-all space-y-4">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-100 pb-3">
@@ -102,12 +102,12 @@ export function TimelinePage() {
                         </span>
                       )}
                     </div>
-                    <span className="font-display text-2xl font-bold text-gold-600/40">
+                    <span className="font-display text-2xl font-bold text-gold-600/50">
                       #{item.mark}
                     </span>
                   </div>
 
-                  <h3 className="font-display text-2xl sm:text-3xl text-brown-950 font-bold group-hover:text-gold-600 transition-colors">
+                  <h3 className="font-display text-2xl sm:text-3xl text-brown-950 font-bold group-hover:text-brown-700 transition-colors">
                     {item.title}
                   </h3>
 

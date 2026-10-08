@@ -24,7 +24,7 @@ export function FutureDevelopmentsPage() {
 
       {/* 2. Pipeline Overview Cards */}
       <section className="py-24 bg-cream-50">
-        <div className="px-site max-w-7xl mx-auto space-y-16">
+        <div className="px-site space-y-16">
           <SectionHeading
             eyebrow="Planned Footprint"
             title="Strategic Deployments Across Maharashtra"
@@ -39,7 +39,7 @@ export function FutureDevelopmentsPage() {
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between border-b border-stone-100 pb-4">
-                    <span className="text-xs font-mono font-bold uppercase tracking-wider text-gold-600">
+                    <span className="text-xs font-mono font-bold uppercase tracking-wider text-brown-700">
                       Phase 0{idx + 1}
                     </span>
                     <span className="px-3 py-1 rounded-full bg-cream-100 text-brown-900 text-xs font-semibold">
@@ -68,7 +68,7 @@ export function FutureDevelopmentsPage() {
                 <div className="pt-4 border-t border-stone-100">
                   <Link
                     to="/contact"
-                    className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brown-800 hover:text-gold-600 transition-colors"
+                    className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brown-800 hover:text-brown-600 transition-colors"
                   >
                     <span>Register Early Interest</span>
                     <ArrowRight className="h-3.5 w-3.5" />
@@ -82,12 +82,12 @@ export function FutureDevelopmentsPage() {
 
       {/* 3. Sustainable & Institutional Vision */}
       <section className="py-24 bg-cream-100 border-y border-stone-300">
-        <div className="px-site max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="px-site grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <span className="eyebrow text-brown-700">Engineering Philosophy</span>
             <h2 className="font-display text-3xl sm:text-5xl text-brown-950 leading-tight">
               Building for the Next <br />
-              <span className="display-italic text-gold-600">Fifty Years</span>
+              <span className="display-italic text-brown-600">Fifty Years</span>
             </h2>
             <p className="text-stone-700 font-sans text-base sm:text-lg leading-relaxed font-light">
               As Rapid Construction accelerates into its fifth decade under next-generation leadership, each new square foot adheres to three non-negotiable principles:
@@ -95,7 +95,7 @@ export function FutureDevelopmentsPage() {
 
             <div className="space-y-4 pt-2">
               <div className="flex items-start gap-4">
-                <div className="p-2.5 rounded-lg bg-brown-800 text-gold-300 shrink-0">
+                <div className="p-2.5 rounded-lg bg-brown-800 text-cream-200 shrink-0">
                   <ShieldCheck className="h-5 w-5" />
                 </div>
                 <div>
@@ -109,7 +109,7 @@ export function FutureDevelopmentsPage() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-2.5 rounded-lg bg-brown-800 text-gold-300 shrink-0">
+                <div className="p-2.5 rounded-lg bg-brown-800 text-cream-200 shrink-0">
                   <Sparkles className="h-5 w-5" />
                 </div>
                 <div>
@@ -123,7 +123,7 @@ export function FutureDevelopmentsPage() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="p-2.5 rounded-lg bg-brown-800 text-gold-300 shrink-0">
+                <div className="p-2.5 rounded-lg bg-brown-800 text-cream-200 shrink-0">
                   <TrendingUp className="h-5 w-5" />
                 </div>
                 <div>
@@ -152,8 +152,8 @@ export function FutureDevelopmentsPage() {
 
       {/* 4. Landowners & Institutional Partners Section */}
       <section className="py-24 bg-brown-950 text-cream-100">
-        <div className="px-site max-w-5xl mx-auto text-center space-y-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 border border-gold-400/30 text-xs">
+        <div className="px-site text-center space-y-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream-300/15 text-cream-200 border border-cream-300/30 text-xs">
             <Handshake className="h-3.5 w-3.5" />
             <span>Joint Ventures & Redevelopment</span>
           </div>

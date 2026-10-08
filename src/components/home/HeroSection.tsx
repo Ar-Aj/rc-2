@@ -133,12 +133,12 @@ export function HeroSection() {
       {/* Top spacing to account for fixed header */}
       <div className="h-28 sm:h-36" />
 
-      {/* Hero Content (Center / Lower Third) */}
-      <div className="px-site relative z-10 w-full max-w-6xl py-12">
+      {/* Hero Content (Expansive Full-Width Layout) */}
+      <div className="px-site relative z-10 w-full py-12">
         <div className="space-y-6">
           {/* Eyebrow / Tag */}
           <div className="flex items-center gap-3">
-            <span className="eyebrow text-gold-400 bg-brown-900/80 px-3 py-1 rounded-full border border-gold-400/30 backdrop-blur-md">
+            <span className="eyebrow text-cream-200 bg-brown-900/85 px-3.5 py-1 rounded-full border border-cream-300/30 backdrop-blur-md">
               {active.tag}
             </span>
             <span className="text-[11px] uppercase tracking-widest text-cream-300/80 font-medium hidden sm:inline-block">
@@ -149,12 +149,12 @@ export function HeroSection() {
           {/* Massive Display Title */}
           <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl xl:text-9xl text-cream-100 tracking-tight leading-[0.92]">
             {active.title}{' '}
-            <span className="display-italic font-light text-gold-300">
+            <span className="display-italic font-light text-cream-200">
               {active.italicAccent}
             </span>
           </h1>
 
-          {/* Subtitle / Key Specs */}
+          {/* Subtitle / Key Specs - constrained to readable max-w-2xl */}
           <p className="text-base sm:text-xl text-cream-200/90 max-w-2xl font-sans font-light leading-relaxed">
             {active.subtitle}
           </p>
@@ -167,7 +167,7 @@ export function HeroSection() {
             </Link>
 
             <Link to="/book-site-visit" className="btn btn-outline text-cream-100 hover:text-brown-950 !px-7">
-              <Calendar className="h-4 w-4 text-gold-400" />
+              <Calendar className="h-4 w-4 text-cream-300" />
               <span>Book Site Visit</span>
             </Link>
           </div>

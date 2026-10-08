@@ -18,20 +18,20 @@
   --color-brown-950: #1e110b;
   --color-brown-900: #2a1810;
   --color-brown-800: #3b2116;
-  --color-brown-700: #5b3222; /* logo / brochure brown — primary */
-  --color-brown-600: #74432f;
-  --color-brown-500: #8e5a40;
-  --color-brown-400: #ab7a5c;
+  --color-brown-700: #683a2b; /* exact brochure & logo ground sampled — primary */
+  --color-brown-600: #7b4533;
+  --color-brown-500: #93563f;
+  --color-brown-400: #ad6d52;
 
   --color-cream-50: #fbf7f0;
   --color-cream-100: #f5ede0;
   --color-cream-200: #ecdfc9;
-  --color-cream-300: #e8d2a8; /* logo brick cream — secondary */
-  --color-cream-400: #d9bc8a;
+  --color-cream-300: #f7d4aa; /* exact logo brick cream sampled — secondary */
+  --color-cream-400: #e8c799;
 
-  --color-gold-300: #e2c58b;
-  --color-gold-400: #c9a35b; /* luxury accent */
-  --color-gold-500: #a8843f;
+  --color-gold-300: #d8b76c;
+  --color-gold-400: #c9a35b; /* reserved luxury accent strictly for numerals, subtle markers, fine details */
+  --color-gold-500: #ad8a42;
 
   --color-white: #ffffff;
   --color-black: #0b0908;
@@ -110,7 +110,7 @@
 
 /* ---------- Spacing tokens (CSS vars; used via arbitrary values & utilities below) ---------- */
 :root {
-  --gutter: clamp(1.25rem, 4.8vw, 5.5rem);
+  --gutter: clamp(1.5rem, 10vw, 13vw);
   --section: clamp(6rem, 13vw, 13rem);
   --section-sm: clamp(4rem, 8vw, 8rem);
   --header-h: 84px;

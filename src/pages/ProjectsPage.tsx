@@ -36,10 +36,10 @@ export function ProjectsPage() {
       <section className="relative pt-36 pb-20 bg-brown-950 text-cream-100 overflow-hidden border-b border-brown-800">
         <div className="absolute inset-0 blueprint opacity-20 pointer-events-none" />
         <div className="px-site relative z-10 max-w-4xl space-y-6">
-          <span className="eyebrow text-gold-400">Architectural Archive</span>
+          <span className="eyebrow text-cream-300">Architectural Archive</span>
           <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-cream-100 tracking-tight leading-[0.95]">
             Portfolio of <br />
-            <span className="display-italic text-gold-300">Enduring Landmarks</span>
+            <span className="display-italic text-cream-200">Enduring Landmarks</span>
           </h1>
           <p className="text-cream-200/90 text-lg sm:text-xl font-light font-sans max-w-2xl leading-relaxed">
             Twenty-four projects delivered across Mumbai, Neral, and Khopoli since 1984. Explore ready-to-move
@@ -52,7 +52,7 @@ export function ProjectsPage() {
               download
               className="btn btn-outline text-cream-100 hover:text-brown-950 !py-2.5 !text-xs"
             >
-              <Download className="h-4 w-4 text-gold-400" />
+              <Download className="h-4 w-4 text-cream-300" />
               <span>Download Complete Portfolio (PDF)</span>
             </a>
           </div>
@@ -167,7 +167,7 @@ export function ProjectsPage() {
                       {proj.hasPage ? (
                         <Link
                           to={`/projects/${proj.slug}`}
-                          className="inline-flex items-center gap-1 font-semibold text-brown-800 hover:text-gold-600 transition-colors"
+                          className="inline-flex items-center gap-1 font-semibold text-brown-800 hover:text-brown-700 transition-colors"
                         >
                           <span>View</span>
                           <ArrowUpRight className="h-3 w-3" />

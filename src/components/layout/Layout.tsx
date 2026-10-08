@@ -1,7 +1,6 @@
 import { type ReactNode } from 'react'
 import { Header } from './Header'
 import { Footer } from './Footer'
-import { Cursor } from './Cursor'
 import { SmoothScroll } from '../../lib/smooth-scroll'
 import { Seo } from '../seo/Seo'
 import { MessageSquare, Phone } from 'lucide-react'
@@ -19,7 +18,6 @@ export function Layout({ children }: LayoutProps) {
   return (
     <SmoothScroll>
       <Seo />
-      <Cursor />
 
       {/* Accessible Skip Link */}
       <a href="#main-content" className="skip-link">

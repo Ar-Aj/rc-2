@@ -16,10 +16,10 @@ export function LeadershipPage() {
       <section className="relative pt-36 pb-20 bg-brown-950 text-cream-100 overflow-hidden border-b border-brown-800">
         <div className="absolute inset-0 blueprint opacity-20 pointer-events-none" />
         <div className="px-site relative z-10 max-w-4xl space-y-6">
-          <span className="eyebrow text-gold-400">Guiding Vision</span>
+          <span className="eyebrow text-cream-300">Guiding Vision</span>
           <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-cream-100 tracking-tight leading-[0.95]">
             The Leadership <br />
-            <span className="display-italic text-gold-300">& Guardians of Legacy</span>
+            <span className="display-italic text-cream-200">& Guardians of Legacy</span>
           </h1>
           <p className="text-cream-200/90 text-lg sm:text-xl font-light font-sans max-w-2xl leading-relaxed">
             At Rapid Construction, leadership has gracefully transitioned to a new generation of forward-thinking
@@ -77,7 +77,7 @@ export function LeadershipPage() {
 
                   <div className="pt-3 border-t border-stone-200/80 flex items-center justify-between text-[11px] text-brown-700 font-medium">
                     <span>Executive Board</span>
-                    <span className="font-semibold text-gold-600">{person.role}</span>
+                    <span className="font-semibold text-brown-800">{person.role}</span>
                   </div>
                 </div>
               </div>
@@ -102,21 +102,21 @@ export function LeadershipPage() {
               <div
                 key={founder.name}
                 className={`lg:col-span-6 p-8 sm:p-10 rounded-xs bg-brown-900/60 border border-brown-800 space-y-6 ${
-                  i === 0 ? 'border-gold-400/30' : ''
+                  i === 0 ? 'border-cream-300/30' : ''
                 }`}
               >
                 <div className="flex items-center gap-4">
                   {founder.portrait ? (
-                    <div className="h-20 w-20 rounded-full overflow-hidden border-2 border-gold-400/50 shrink-0 bg-cream-200">
+                    <div className="h-20 w-20 rounded-full overflow-hidden border-2 border-cream-300/40 shrink-0 bg-cream-200">
                       <Img k={founder.portrait} alt={founder.name} className="h-full w-full object-cover" />
                     </div>
                   ) : (
-                    <div className="h-20 w-20 rounded-full border-2 border-cream-300/30 shrink-0 bg-brown-850 flex items-center justify-center font-display text-xl text-gold-400">
+                    <div className="h-20 w-20 rounded-full border-2 border-cream-300/30 shrink-0 bg-brown-850 flex items-center justify-center font-display text-xl text-cream-200">
                       RC
                     </div>
                   )}
                   <div>
-                    <span className="eyebrow text-gold-400 block mb-1">{founder.title}</span>
+                    <span className="eyebrow text-cream-300 block mb-1">{founder.title}</span>
                     <h3 className="font-display text-2xl sm:text-3xl text-cream-100">{founder.name}</h3>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export function LeadershipPage() {
             description="Rapid Construction is proud to collaborate with industry-leading planners, advisors, and interior studios."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {partners.map((partner: { name: string; role: string }) => (
               <div
                 key={partner.name}

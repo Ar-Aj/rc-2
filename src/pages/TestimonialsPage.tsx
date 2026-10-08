@@ -76,7 +76,7 @@ export function TestimonialsPage() {
 
       {/* 3. Testimonial Cards */}
       <section className="py-24 bg-cream-50">
-        <div className="px-site max-w-7xl mx-auto">
+        <div className="px-site">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {displayedTestimonials.map((item, idx) => (
               <div
@@ -85,7 +85,7 @@ export function TestimonialsPage() {
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <Quote className="h-8 w-8 text-gold-400/50" />
+                    <Quote className="h-8 w-8 text-cream-300" />
                     {item.sample && <SampleBadge label="Sample Voice" />}
                   </div>
 
@@ -98,7 +98,7 @@ export function TestimonialsPage() {
                   <h4 className="font-sans font-bold text-sm text-brown-900">
                     {item.name}
                   </h4>
-                  <p className="font-mono text-xs text-gold-600 font-medium">
+                  <p className="font-mono text-xs text-brown-700 font-medium">
                     {item.project}
                   </p>
                 </div>
